@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desplazar</title>
+
+        <!-- TRANSICIONES -->
+        <!-- 
+        linear 
+        ease-in 
+        ease-out
+        ease-in-out
+        -->
+
+        <style>
+
+            .cuadrado{
+              
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                background-color: chartreuse;
+                /* transition:all 500ms linear 1s; */ /* el parámetro de 1s es el retraso opcional */
+                transition:all 500ms linear;
+            }
+
+            .cuadrado:hover{
+                /* background-color: red; */
+                /* opacity:1; */
+                transform:translate(40px,40px);
+            }
+
+            /* .cuadrado:active{
+                background-color: orange;
+            } */
+
+            img{
+                width: 200px;
+                transition:all 3s ease-out;
+            }
+
+            img:hover{
+                transform:translate(800px,0px);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+       <div class="cuadrado"></div>
+
+       <img src="./assets/img/car.webp" alt="">
+        
+    </body>
+</html>
+
+
