@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botonera F1 Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        @font-face {
+            font-family:"F1-Bold" ;
+            src: url(./assets/fonts/Formula1-Bold.otf);
+        }
+        @font-face {
+            font-family:"F1-Regular" ;
+            src: url(./assets/fonts/Formula1-Regular.otf);
+        }
+        @font-face {
+            font-family:"F1-Wide" ;
+            src: url(./assets/fonts/Formula1-Wide.otf);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+        }
+
+        html,body {
+            font-size: 16px; /* 1rem */
+        }
+
+        #botonera-roja {
+            background-color: #e10600;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        img {
+            height: 32.5px;
+        }
+
+        ul{
+            display: flex;
+            height: 70px;
+            justify-content: center;
+            align-self: center;
+            padding-left: 20px;
+        }
+
+
+        li {
+            display: flex;
+            align-items: center;
+            padd
+            
+        }
+
+        .botonera-roja__boton {
+            color: white;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 300;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-family:"F1-Regular";
+        }
+
+        li:hover {
+            background-color: #000000;
+            transition: 0.5s;
+
+        }
+
+        .fa-solid{
+            color: white;
+            font-size: 10px;
+            padding-right: 6px;
+        }
+
+        .desplegable {
+            background-color: #000000;
+            padding: 50px 20px 20px;
+
+            
+        }
+
+        h2 {
+            font-family:"F1-Regular";
+            font-size: 17px;
+            color: white;
+            padding: 7px 0 20px 0;
+            border-right: 1px solid #858080;
+            border-bottom: 1px solid #858080;
+            border-bottom-right-radius: 10px;
+        }
+
+        .pilotos__nombres{
+            color: white;
+            font-family:"F1-Regular";
+            font-size: 14px;
+        }
+
+        .desplegable__links{
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .pilotos {
+            display: grid;
+            flex-wrap: wrap ;
+            padding-top: 5px;
+            padding-left: 10px;
+            margin: 0 25px 25px 0;
+            border-right: 1px solid #858080;
+            border-bottom: 1px solid #858080;
+            border-bottom-right-radius: 10px;
+        }
+
+        #alpine:hover {
+            border-right: 1px solid #14a9ff;
+            border-bottom: 1px solid #14a9ff;
+            border-bottom-right-radius: 10px;
+        }
+
+        #mercedes:hover {
+            border-right: 1px solid #1addac;
+            border-bottom: 1px solid #1addac;
+            border-bottom-right-radius: 10px;
+        }
+
+        #williams:hover {
+            border-right: 1px solid #0e90db;
+            border-bottom: 1px solid #0e90db;
+            border-bottom-right-radius: 10px;
+        }
+
+        #kick-sauber:hover{
+            border-right: 1px solid #0f8f1a;
+            border-bottom: 1px solid #0f8f1a;
+            border-bottom-right-radius: 10px;
+        }
+
+        .coche-img {
+            height: 45px;
+            transition: all 1s ease-out;
+        }
+
+        .coche-img:hover {
+            transform: translateX(220px);
+        }
+
+
+
+        
+
+    </style>
+
+</head>
+<body>
+    <nav id="botonera-roja">
+        <a href="">
+            <img src="./assets/img/f1_logo.png" alt="Logo oficial F1">
+        </a>
+        <ul>
+            <li>
+                <a class="botonera-roja__boton" href="#">Latest</a>
+                <i class="fa-solid fa-chevron-down"></i>            
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Video</a>
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">F1 Unlocked</a>
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Schedule</a>
+                <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Results</a>
+                <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Drivers</a>
+                <i class="fa-solid fa-chevron-down"></i>              
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Teams</a>
+                <i class="fa-solid fa-chevron-down"></i>          
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Gaming</a>
+                <i class="fa-solid fa-chevron-down"></i>               
+            </li>
+            <li>
+                <a class="botonera-roja__boton" href="#">Live Timing</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="desplegable">
+        <h2>All Teams</h2>
+        <nav class="desplegable__links">
+            <a id="alpine" href="https://www.formula1.com/en/teams/alpine" class="pilotos">
+                <span class="pilotos__nombres">
+                    Alpine
+                </span>
+                <img class="coche-img" src="./assets/img/alpine.avif" alt="coche alpine imagen">
+            </a>
+            <a href="https://www.formula1.com/en/teams/haas" class="pilotos">
+                <span class="pilotos__nombres">
+                    Haas
+                </span>
+                <img class="coche-img" src="./assets/img/haas.avif" alt="">
+            </a>
+            <a id="mercedes" href="https://www.formula1.com/en/teams/mercedes" class="pilotos">
+                <span class="pilotos__nombres">
+                    Mercedes
+                </span>
+                <img class="coche-img" src="./assets/img/mercedes.avif" alt="">
+            </a>
+            <a id="williams" href="https://www.formula1.com/en/teams/williams" class="pilotos">
+                <span class="pilotos__nombres">
+                    Williams
+                </span>
+                <img class="coche-img" src="./assets/img/williams.avif" alt="">
+            </a>
+            <a href="https://www.formula1.com/en/teams/aston-martin" class="pilotos">
+                <span class="pilotos__nombres">
+                    Aston Martin
+                </span>
+                <img class="coche-img" src="./assets/img/aston-martin.avif" alt="">
+            </a>
+            <a id="kick-sauber" href="#" class="pilotos">
+                <span class="pilotos__nombres">
+                    Kick Sauber
+                </span>
+                <img class="coche-img" src="./assets/img/kick-sauber.avif" alt="">
+            </a>
+            <a href="#" class="pilotos">
+                <span class="pilotos__nombres">
+                    RB
+                </span>
+                <img class="coche-img" src="./assets/img/rb.avif" alt="">
+            </a>
+            <a href="#" class="pilotos">
+                <span class="pilotos__nombres">
+                    Ferrari
+                </span>
+                <img class="coche-img" src="./assets/img/ferrari.avif" alt="">
+            </a>
+            <a href="#" class="pilotos">
+                <span class="pilotos__nombres">
+                    McLaren
+                </span>
+                <img class="coche-img" src="./assets/img/mclaren.avif" alt="">
+            </a>
+            <a href="#" class="pilotos">
+                <span class="pilotos__nombres">
+                    Red Bull Racing
+                </span>
+                <img class="coche-img" src="./assets/img/red-bull-racing.avif" alt="">
+            </a>
+        </nav>
+    </section>
+</body>
+</html>
