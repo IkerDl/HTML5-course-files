@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botonera F1 Simple</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Botonera F1 Simple</title>
     <style>
-
+        
         @font-face {
             font-family:"F1-Bold" ;
             src: url(./assets/fonts/Formula1-Bold.otf);
@@ -20,152 +21,74 @@
             font-family:"F1-Wide" ;
             src: url(./assets/fonts/Formula1-Wide.otf);
         }
-
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-            outline: none;
-            box-sizing: border-box;
-            line-height: 1;
-        }
-
-        html,body {
-            font-size: 16px; /* 1rem */
-        }
-
-        #botonera-roja {
-            background-color: #e10600;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            padding-left: 10px;
-        }
-
-        img {
-            height: 32.5px;
-        }
-
-        ul{
-            display: flex;
-            height: 70px;
-            justify-content: center;
-            align-self: center;
-            padding-left: 20px;
-        }
-
-
-        li {
-            display: flex;
-            align-items: center;
-            padd
-            
-        }
-
-        .botonera-roja__boton {
-            color: white;
-            padding: 10px;
-            font-size: 13px;
-            font-weight: 300;
-            padding-left: 12px;
-            padding-right: 12px;
-            font-family:"F1-Regular";
-        }
-
-        li:hover {
-            background-color: #000000;
-            transition: 0.5s;
-
-        }
-
-        .fa-solid{
-            color: white;
-            font-size: 10px;
-            padding-right: 6px;
-        }
-
-        .desplegable {
-            background-color: #000000;
-            padding: 50px 20px 20px;
-
-            
-        }
-
-        h2 {
-            font-family:"F1-Regular";
-            font-size: 17px;
-            color: white;
-            padding: 7px 0 20px 0;
-            border-right: 1px solid #858080;
-            border-bottom: 1px solid #858080;
-            border-bottom-right-radius: 10px;
-        }
-
-        .pilotos__nombres{
-            color: white;
-            font-family:"F1-Regular";
-            font-size: 14px;
-        }
-
-        .desplegable__links{
-            padding-top: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .pilotos {
-            display: grid;
-            flex-wrap: wrap ;
-            padding-top: 5px;
-            padding-left: 10px;
-            margin: 0 25px 25px 0;
-            border-right: 1px solid #858080;
-            border-bottom: 1px solid #858080;
-            border-bottom-right-radius: 10px;
-        }
-
-        #alpine:hover {
-            border-right: 1px solid #14a9ff;
-            border-bottom: 1px solid #14a9ff;
-            border-bottom-right-radius: 10px;
-        }
-
-        #mercedes:hover {
-            border-right: 1px solid #1addac;
-            border-bottom: 1px solid #1addac;
-            border-bottom-right-radius: 10px;
-        }
-
-        #williams:hover {
-            border-right: 1px solid #0e90db;
-            border-bottom: 1px solid #0e90db;
-            border-bottom-right-radius: 10px;
-        }
-
-        #kick-sauber:hover{
-            border-right: 1px solid #0f8f1a;
-            border-bottom: 1px solid #0f8f1a;
-            border-bottom-right-radius: 10px;
-        }
-
-        .coche-img {
-            height: 45px;
-            transition: all 1s ease-out;
-        }
-
-        .coche-img:hover {
-            transform: translateX(220px);
-        }
-
-
-
-        
-
     </style>
 
 </head>
 <body>
+    <nav id="botonera-gris">
+        <ul class="botones-categorias">
+            <li>
+                <a href="#">
+                    <img class="fia-logo" src="./assets/img/fia_logo.png" alt="logo fia">
+                </a>
+            </li>
+            <li class="categorias__links">
+                <a href="#">
+                    <span>
+                        F1®
+                    </span>
+                </a>
+            </li>
+            <li class="categorias__links">
+                <a href="#">   
+                    <span>F2™</span>
+                </a>
+            </li>
+            <li class="categorias__links">
+                <a href="#">
+                    <span>F3™</span>
+                </a>
+            </li>
+            <li class="categorias__links">
+                <a href="#">
+                    <span>F1® ACADEMY</span>
+                   
+                </a>
+            </li>
+        </ul>
+        <ul class="botones-opciones">
+            <li>
+                <a href="#">AUTHENTICS</a>
+            </li>
+            <li>
+                <a href="#">STORE</a>
+            </li>
+            <li>
+                <a href="#">TICKETS</a>
+            </li>
+            <li>
+                <a href="#">HOSPITALITY</a>
+            </li>
+            <li>
+                <a href="#">EXPERIENCES</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="f1-tv-logo" src="./assets/img/f1-tv-logo.png" alt="logo f1 television">
+                </a>
+            </li>
+        </ul>
+        <div class="botones-login">
+            <a href="#">
+                <span>IC</span>
+                <span>SIGN IN</span>
+            </a>
+            <a href="#">
+                <span>SUBSCRIBE</span>
+            </a>
+        </div>
+    </nav>
+
     <nav id="botonera-roja">
         <a href="">
             <img src="./assets/img/f1_logo.png" alt="Logo oficial F1">

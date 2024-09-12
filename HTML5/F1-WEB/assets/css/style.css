@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+html,body {
+    font-size: 16px; /* 1rem */
+}
+
+#botonera-gris {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    font-family:"F1-Regular" ;
+    font-weight: 700;
+}
+
+.fia-logo {
+    height: 25.55px;
+    opacity: .4;
+    padding-right: 10px;
+    border-right: 2px solid #e5e7eb;
+}
+
+.categorias__links {
+    padding-left: 12px;
+}
+
+span {
+    font-size: 12px;
+    color: #cfcfcf;
+}
+
+
+
+.botones-categorias {
+    padding-left: 10px;
+}
+
+.f1-tv-logo{
+    height: 12px;
+}
+
+#botonera-roja {
+    background-color: #e10600;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+img {
+    height: 32.5px;
+}
+
+ul{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-self: center;
+    padding-left: 20px;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.botonera-roja__boton {
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family:"F1-Regular";
+}
+
+li:hover {
+    background-color: #000000;
+    transition: all 0.1s ease-in;
+
+}
+
+.fa-solid{
+    color: white;
+    font-size: 10px;
+    padding-right: 6px;
+}
+
+.desplegable {
+    background-color: #000000;
+    padding: 50px 20px 20px;
+
+    
+}
+
+h2 {
+    font-family:"F1-Regular";
+    font-size: 17px;
+    color: white;
+    padding: 7px 0 20px 0;
+    border-right: 1px solid #858080;
+    border-bottom: 1px solid #858080;
+    border-bottom-right-radius: 10px;
+}
+
+.pilotos__nombres{
+    color: white;
+    font-family:"F1-Regular";
+    font-size: 14px;
+}
+
+.desplegable__links{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pilotos {
+    display: grid;
+    flex-wrap: wrap ;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin: 0 25px 25px 0;
+    border-right: 1px solid #858080;
+    border-bottom: 1px solid #858080;
+    border-bottom-right-radius: 10px;
+}
+
+#alpine:hover {
+    border-right: 1px solid #14a9ff;
+    border-bottom: 1px solid #14a9ff;
+    border-bottom-right-radius: 10px;
+}
+
+#mercedes:hover {
+    border-right: 1px solid #1addac;
+    border-bottom: 1px solid #1addac;
+    border-bottom-right-radius: 10px;
+}
+
+#williams:hover {
+    border-right: 1px solid #0e90db;
+    border-bottom: 1px solid #0e90db;
+    border-bottom-right-radius: 10px;
+}
+
+#kick-sauber:hover{
+    border-right: 1px solid #0f8f1a;
+    border-bottom: 1px solid #0f8f1a;
+    border-bottom-right-radius: 10px;
+}
+
+.coche-img {
+    height: 45px;
+    transition: all 1s ease-out;
+}
+
+.coche-img:hover {
+    transform: translateX(220px);
+}
