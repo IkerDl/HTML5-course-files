@@ -93,10 +93,12 @@
         <a href="">
             <img src="./assets/img/f1_logo.png" alt="Logo oficial F1">
         </a>
-        <ul>
+        <ul class="botonera-roja__ul">
             <li>
-                <a class="botonera-roja__boton" href="#">Latest</a>
-                <i class="fa-solid fa-chevron-down"></i>            
+                <ul>
+                    <a class="botonera-roja__boton" href="#">Latest</a>
+                    <i class="fa-solid fa-chevron-down"></i> 
+                </ul>           
             </li>
             <li>
                 <a class="botonera-roja__boton" href="#">Video</a>
@@ -105,24 +107,99 @@
                 <a class="botonera-roja__boton" href="#">F1 Unlocked</a>
             </li>
             <li>
-                <a class="botonera-roja__boton" href="#">Schedule</a>
-                <i class="fa-solid fa-chevron-down"></i>
+                <ul>    
+                    <a class="botonera-roja__boton" href="#">Schedule</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </ul>
             </li>
             <li>
-                <a class="botonera-roja__boton" href="#">Results</a>
-                <i class="fa-solid fa-chevron-down"></i>
+                <ul>
+                    <a class="botonera-roja__boton" href="#">Results</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </ul>
             </li>
             <li>
-                <a class="botonera-roja__boton" href="#">Drivers</a>
-                <i class="fa-solid fa-chevron-down"></i>              
+                <ul>
+                    <a class="botonera-roja__boton" href="#">Drivers</a>
+                    <i class="fa-solid fa-chevron-down"></i>  
+                </ul>     
             </li>
             <li>
-                <a class="botonera-roja__boton" href="#">Teams</a>
-                <i class="fa-solid fa-chevron-down"></i>          
+                <ul>
+                    <a id="boton-teams" class="botonera-roja__boton" href="#">Teams</a>
+                    <i class="fa-solid fa-chevron-down"></i> 
+                    <section class="desplegable-teams">
+                        <h2>All Teams</h2>
+                        <nav class="desplegable-teams__links">
+                            <a id="alpine" href="https://www.formula1.com/en/teams/alpine" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Alpine
+                                </span>
+                                <img class="coche-img" src="./assets/img/alpine.avif" alt="coche alpine imagen">
+                            </a>
+                            <a href="https://www.formula1.com/en/teams/haas" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Haas
+                                </span>
+                                <img class="coche-img" src="./assets/img/haas.avif" alt="">
+                            </a>
+                            <a id="mercedes" href="https://www.formula1.com/en/teams/mercedes" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Mercedes
+                                </span>
+                                <img class="coche-img" src="./assets/img/mercedes.avif" alt="">
+                            </a>
+                            <a id="williams" href="https://www.formula1.com/en/teams/williams" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Williams
+                                </span>
+                                <img class="coche-img" src="./assets/img/williams.avif" alt="">
+                            </a>
+                            <a href="https://www.formula1.com/en/teams/aston-martin" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Aston Martin
+                                </span>
+                                <img class="coche-img" src="./assets/img/aston-martin.avif" alt="">
+                            </a>
+                            <a id="kick-sauber" href="#" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Kick Sauber
+                                </span>
+                                <img class="coche-img" src="./assets/img/kick-sauber.avif" alt="">
+                            </a>
+                            <a href="#" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    RB
+                                </span>
+                                <img class="coche-img" src="./assets/img/rb.avif" alt="">
+                            </a>
+                            <a href="#" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Ferrari
+                                </span>
+                                <img class="coche-img" src="./assets/img/ferrari.avif" alt="">
+                            </a>
+                            <a href="#" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    McLaren
+                                </span>
+                                <img class="coche-img" src="./assets/img/mclaren.avif" alt="">
+                            </a>
+                            <a href="#" class="pilotos">
+                                <span class="pilotos__nombres">
+                                    Red Bull Racing
+                                </span>
+                                <img class="coche-img" src="./assets/img/red-bull-racing.avif" alt="">
+                            </a>
+                        </nav>
+                    </section>
+                </ul>    
             </li>
             <li>
-                <a class="botonera-roja__boton" href="#">Gaming</a>
-                <i class="fa-solid fa-chevron-down"></i>               
+                <ul>
+                    <a class="botonera-roja__boton" href="#">Gaming</a>
+                    <i class="fa-solid fa-chevron-down"></i>   
+                </ul>     
             </li>
             <li>
                 <a class="botonera-roja__boton" href="#">Live Timing</a>
@@ -132,70 +209,6 @@
 
     </nav>
 
-    <section class="desplegable">
-        <h2>All Teams</h2>
-        <nav class="desplegable__links">
-            <a id="alpine" href="https://www.formula1.com/en/teams/alpine" class="pilotos">
-                <span class="pilotos__nombres">
-                    Alpine
-                </span>
-                <img class="coche-img" src="./assets/img/alpine.avif" alt="coche alpine imagen">
-            </a>
-            <a href="https://www.formula1.com/en/teams/haas" class="pilotos">
-                <span class="pilotos__nombres">
-                    Haas
-                </span>
-                <img class="coche-img" src="./assets/img/haas.avif" alt="">
-            </a>
-            <a id="mercedes" href="https://www.formula1.com/en/teams/mercedes" class="pilotos">
-                <span class="pilotos__nombres">
-                    Mercedes
-                </span>
-                <img class="coche-img" src="./assets/img/mercedes.avif" alt="">
-            </a>
-            <a id="williams" href="https://www.formula1.com/en/teams/williams" class="pilotos">
-                <span class="pilotos__nombres">
-                    Williams
-                </span>
-                <img class="coche-img" src="./assets/img/williams.avif" alt="">
-            </a>
-            <a href="https://www.formula1.com/en/teams/aston-martin" class="pilotos">
-                <span class="pilotos__nombres">
-                    Aston Martin
-                </span>
-                <img class="coche-img" src="./assets/img/aston-martin.avif" alt="">
-            </a>
-            <a id="kick-sauber" href="#" class="pilotos">
-                <span class="pilotos__nombres">
-                    Kick Sauber
-                </span>
-                <img class="coche-img" src="./assets/img/kick-sauber.avif" alt="">
-            </a>
-            <a href="#" class="pilotos">
-                <span class="pilotos__nombres">
-                    RB
-                </span>
-                <img class="coche-img" src="./assets/img/rb.avif" alt="">
-            </a>
-            <a href="#" class="pilotos">
-                <span class="pilotos__nombres">
-                    Ferrari
-                </span>
-                <img class="coche-img" src="./assets/img/ferrari.avif" alt="">
-            </a>
-            <a href="#" class="pilotos">
-                <span class="pilotos__nombres">
-                    McLaren
-                </span>
-                <img class="coche-img" src="./assets/img/mclaren.avif" alt="">
-            </a>
-            <a href="#" class="pilotos">
-                <span class="pilotos__nombres">
-                    Red Bull Racing
-                </span>
-                <img class="coche-img" src="./assets/img/red-bull-racing.avif" alt="">
-            </a>
-        </nav>
-    </section>
+
 </body>
 </html>

@@ -11,7 +11,7 @@
 html,body {
     font-size: 16px; /* 1rem */
 }
-
+/* Botonera gris */
 #botonera-gris {
     height: 49px;
     display: flex;
@@ -60,9 +60,8 @@ img {
 
 ul{
     display: flex;
-    height: 70px;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     padding-left: 20px;
 }
 
@@ -70,8 +69,6 @@ ul{
 li {
     display: flex;
     align-items: center;
-    
-    
 }
 
 .botonera-roja__boton {
@@ -96,11 +93,26 @@ li:hover {
     padding-right: 6px;
 }
 
-.desplegable {
+/* Desplegable TEAMS */
+
+#boton.teams{
+    position: relative;
+}
+
+.desplegable-teams {
     background-color: #000000;
     padding: 50px 20px 20px;
+    position: absolute;
+    width: 100%;
+/*     visibility: hidden;
+ */    top: 119px;
+    right: 344px;
 
     
+}
+.desplegable-teams:hover {
+    visibility: visible;
+    opacity: 1;
 }
 
 h2 {
@@ -119,7 +131,7 @@ h2 {
     font-size: 14px;
 }
 
-.desplegable__links{
+.desplegable-teams__links{
     padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
