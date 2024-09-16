@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+
+    <!--  
+        UN ELEMENTO ESTÁ POSICIONADO RELATIVAMENTE CUANDO MODIFICA SU POSCIÓN NATURAL
+        CUANDO EN EL CSS SU POSICION ES "relative". POR LO TANTO EL ELEMENTO ESTÁ POSICIONADO
+        Y TIENE LOS SUPERPODERES COMO TODOS LOS ELEMENTOS POSICIONADOS : top, left, bottom y right.
+    -->
+
+    <style>
+        .caja{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 10px;
+            left: 50px;
+            
+        }
+
+        .roja{
+            background-color: red;
+            transition: all 1s ease-out;
+            top: -160px;
+            visibility: hidden;
+        }
+
+        .roja:hover {
+            transform: translatey(160px);
+            visibility: visible;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="caja"></div>
+    <div class="caja roja"></div>
+    <div class="caja"></div>
+</body>
+</html>

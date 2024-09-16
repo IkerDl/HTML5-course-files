@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <style>
+        </style>
+    <title>Relative</title>
+
+    <!--  
+        absolute IMPLICA QUE EL ELEMENTO ESTA POSICIONADO,
+        POR LO TANTO MEDIANTE LAS PROPIEDADES (top,bottom,...)
+        SE POSICIONA RELATIVAMENTE A SU ANCESTRO POSICIONADO MAS CERCANO.
+        EN EL CASO DE NO TENER NINGUN ANCESTRO POSICIONADO, SE POSICIONARIA
+        EN RELACION AL BODY
+    -->
+
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+        article{
+            width: 310px;
+            padding-left: 5px;
+            border-bottom: 1px solid #666666;
+            padding-bottom: 5px;
+        }
+
+        .imagen{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .sanchez {
+            width: 100%;
+        }
+
+        .mercado-fichajes{
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .boton{
+            position: absolute;
+            bottom: 146px;
+            left: 190px;
+            height: 21px;
+            width: 95px;
+            background: #3339;
+            border: 1px solid #fff;
+            border-radius: 13px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;       
+            font-weight: 700;   
+            padding-right: 7px;  
+        }
+
+        .boton > a {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #fff;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .circle {
+            height: 16px;
+            padding-right: 7px;
+        }
+
+        p{
+            font-size: 13px;
+            color: #666666;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 19px;
+            line-height: 22px;
+            color: #333333;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+        }
+
+        /* Enlace del titular  */
+        .content-a:link{
+            text-decoration: none;
+        }
+
+        .content-a :hover {
+            color: #f9a300;
+        }
+
+        span{
+            font-size: 12px;
+            font-family: "Source Sans 3", system-ui;
+        }
+
+        .date{
+            color: #999999;
+        }
+    
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+        <article>
+            <div class="imagen">
+                <img class="sanchez" src="./assets/img/sanchez-flores.avif" alt="imagen de sanchez flores en el banquillo">
+                <div class="mercado-fichajes">
+                    <img src="./assets/img/mercado-fichajes.jpg" alt="">
+                    <div class="boton">
+                        <a href="#">
+                            <img class="circle" src="./assets/img/red-circle.gif" alt="">
+                            <span>EN DIRECTO</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <p>MERCADO DE FICHAJES</p>
+            <a class="content-a" href="#">
+                <h2>Sánchez Flores: "Volveré al fútbol árabe, no voy a cambiar países y refuerzan mi economía"</h2>
+            </a>
+            <span>DANIEL L.PEINADO / ALBERTO P.SIERRA / JAVIER MARTIN</span>
+            <span class="date">13/09/2024 10:15</span>
+    
+        </article>
+    </div>
+
+</body>
+</html>

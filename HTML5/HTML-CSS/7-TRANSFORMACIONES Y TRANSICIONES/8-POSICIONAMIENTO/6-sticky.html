@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset-meyer.css">
+    <title>Sticky</title>
+
+<!--    
+    EL POSICIONAMIENTO STICKY
+  -->
+
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .botonera-roja{
+            width: 100%;
+            height: 70px;
+            background-color: red;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 200;
+        }
+
+        .contenedor-principal{
+            width: 80%;
+            height: 2000px;
+            background-color: greenyellow;
+        }
+
+        .banner-portada{
+            background-color: orange;
+            margin-top: 70px;
+            height: 250px;
+        }
+
+        /* Contiene la parte izquierda y derecha de las noticias de la portada */
+        .noticias-portada{
+            background-color: violet;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .noticia-izquierda-portada{
+            background-color: blue;
+            width: 49%;
+        }
+
+        .noticias-derecha-portada{
+            background-color: aqua;
+            height: 500px;
+            width: 49%;
+        }
+
+        .noticia-principal{
+            background-color: pink;
+            height: 200px;
+            position: sticky;
+            top: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="botonera-roja">
+
+    </nav>
+
+    <div class="contenedor-principal">
+
+        <section class="banner-portada">
+        
+        </section>
+
+        <section class="noticias-portada">
+
+            <section class="noticia-izquierda-portada">
+
+                <article class="noticia-principal">
+
+                </article>
+            </section>
+
+            <section class="noticias-derecha-portada">
+
+                <article>
+
+                </article>
+
+            </section>
+
+        </section>
+
+        <section class="banner-promocion">
+
+        </section>
+
+    </div>
+
+</body>
+</html>
