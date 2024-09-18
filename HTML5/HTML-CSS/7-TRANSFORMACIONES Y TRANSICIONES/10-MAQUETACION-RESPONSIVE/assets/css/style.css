@@ -1,0 +1,181 @@
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    * {
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    body,html{
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+    }
+
+    .cabecera {
+        height: 50px;
+        background-color: #92c050;
+    }
+
+    .botonera-principal{
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 2px;
+    }
+
+    .botonera-principal a {
+        background-color: #e10600;
+        color: white;
+        padding: 10px 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botonera-principal .logo{
+        display: none;
+    }
+
+    .principal {
+        background-color: #9cc3e6;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .principal article{
+        background-color: yellow;
+        height: 200px;
+        width: 100%;
+    }
+
+    .pie-pagina{
+        background-color: #151515;
+        gap: 5px
+;
+
+    }
+
+    .pie-pagina .direccion{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .pie-pagina .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .pie-pagina .social-media a:link{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .pie-pagina .direccion .imagen-footer{
+        width: 20%;
+    }
+
+    .pie-pagina .direccion .imagen-footer img{
+        width: 100%;
+
+    }
+
+    .pie-pagina .direccion .copyright-footer{
+        width: 20%;
+    }
+
+
+    .pie-pagina .direccion .copyright-footer span{
+        color: white;
+        font-size: 12px;
+    }
+
+    .pie-pagina .botonera-footer{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 576PX (A PARTIR DE 575PX INCLUSIVE) - SMARTPHONES */
+@media only screen and (min-width:576px){
+
+ .cuadrado {
+     background-color: green;
+     width: 100px;
+     height: 100px;
+    }
+
+
+
+}
+
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */
+@media only screen and (min-width:768px){
+
+   
+
+
+}
+
+
+
+/* MAYOR O IGUAL DE 992PX (A PARTIR DE 992PX INCLUSIVE) - PC PEQUEÑOS, LAPTOPS */
+@media only screen and (min-width:992px){
+    .cuadrado{
+        background-color: red;
+        width: 300px;
+        height: 300px;
+    }
+  
+
+}
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */
+@media only screen and (min-width:1200px){
+
+
+
+
+}
