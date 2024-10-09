@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector clase</title>
+
+        <style>
+           /* El selector de clase identifica y estiliza las etiquetas del DOM que pertenecen
+           a esa clase */
+          
+           /* Su grado de especificidad es 10*/
+           *{
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+
+            }
+
+            .fondo-rojo{
+
+                background-color: red;
+            }
+
+            .letra-amarilla{
+
+                color:yellow
+            }
+
+            *.borde-redondeado{
+
+                border-radius: 5px;
+            }
+
+
+            .borde-verde{
+                border:2px green solid;
+            }
+  
+            .boton-principal{
+
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 10px;
+                border-radius: 10px;
+                background-color:blue;
+                border:1px solid yellow;
+                color: yellow;
+
+
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <p class="fondo-rojo letra-amarilla borde-redondeado">soy una etiqueta p</p>
+        <p class="borde-verde">soy una etiqueta p</p>
+        <p class="fondo-rojo">soy una etiqueta p</p>
+        <p class="boton-principal">soy una etiqueta p</p>
+        <p class="fondo-rojo">soy una etiqueta p</p>
+        <span class="fondo-rojo">soy un span</span>
+        <h1 class="letra-amarilla">soy un titular</h1>
+       <h2 class="fondo-rojo">soy un subtitular</h2>
+
+       <a class="boton-principal" href="https://www.elcorteingles.es/">el corte inglés</a>
+    
+       
+        
+    </body>
+</html>
+
+

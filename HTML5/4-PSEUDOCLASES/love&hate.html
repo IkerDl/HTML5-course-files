@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo clases</title>
+
+        <!--  LAS ETIQUETAS DE LINKS (a) PUEDEN TENER 4 ESTADOS:
+        1) LINK: CUANDO UNA ETIQUETA "<a>" NO HA TENIDO NINGUNA INTERACCIÓN. ESTADO INICIAL
+        2) VISITED: CUANDO UNA ETIQUETA "<a>" HA SIDO PULSADA Y POR LO TANTO VISITADA
+        3) HOVER: ES EL ESTADO QUE ADQUIERE UNA ETIQUETA CUANDO PONEMOS EL CURSOR POR ENCIMA (SIN PULSAR)
+        4) ACTIVE: ES EL ESTADO QUE ADQUIERE UNA ETIQUETA CUANDO LA PULSAMOS Y NO LA SOLTAMOS-->
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+                border: none;
+                outline: none;
+                box-sizing: border-box;
+                line-height: 1;
+            }
+
+            #botonera-principal{
+
+                background-color: #000000;
+                height: 50px;
+                margin-top: 10px;
+
+            }
+
+            /* .boton{
+
+
+            } */
+
+            #botonera-principal a{
+
+                padding:10px 20px;
+                /* padding: 10px 20px 10px 20px; */
+                /* padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                padding-left: 20px; */
+                background-color: red;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:white;
+                border-radius: 10px;
+
+            }
+
+            #botonera-principal a:link{
+                background-color: red;
+            }
+
+            #botonera-principal a:visited{
+                background-color: red;
+            }
+
+            #botonera-principal a:hover{
+                
+                background-color: yellow;
+                color: #000000;
+            }
+
+            #botonera-principal a:active{
+                background-color: greenyellow;
+            }
+
+
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                border-radius: 10px;
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+
+            div:hover{
+
+                background-color: red;
+                cursor: pointer;
+                border-radius: 0;
+            }
+
+            div:active{
+
+                background-color: yellow;
+                width: 250px;
+                height: 250px;
+                border: 3px black solid;
+            }
+
+
+
+        </style>
+
+
+
+    </head>
+    <body>
+
+       <nav id="botonera-principal">
+            <a href="#">Home</a>
+            <a href="#">Moda mujer</a>
+            <a href="#">Deportes</a>
+            <a href="#">Electrónica</a>
+            <a href="#">Hogar</a>
+       </nav>
+
+       <!-- los div tienen las pseudoclases hove y active -->
+       <div></div>
+        
+    </body>
+</html>
+
+

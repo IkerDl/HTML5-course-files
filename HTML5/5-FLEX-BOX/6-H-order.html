@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order</title>
+
+        <!-- Por defecto los hijos flex (flex-items) se renderizan
+        por un orden natural que es, según se va leyendo el código,
+        de arriba a abajo (posicionamiento natural).
+        Sin embargo la propiedad order controla el orden en el que
+        estos hijos flex se renderizan en su contenedor flex-->
+
+        <style>
+
+
+            .padre{
+
+                background-color: blueviolet;
+                height: 100vh;
+                display: flex;
+            }
+
+            .hijo{
+
+                background-color: darkorange;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                font-size: 64px;
+                text-align: center;
+
+            }
+
+            .item1{
+                order:2;
+            }
+
+            .item2{
+                order:6;
+            }
+
+            .item3{
+                order:1;
+            }
+
+            .item4{
+                order:5;
+            }
+
+            .item5{
+                order:3;
+            }
+
+            .item6{
+                order:4;
+            }
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <div class="padre">
+
+            <div class="hijo item1">
+                <span>1</span>
+            </div>
+
+            <div class="hijo item2">
+                <span>2</span>
+            </div>
+
+            <div class="hijo item3">
+                <span>3</span>
+            </div>
+
+            <div class="hijo item4">
+                <span>4</span>
+            </div>
+
+            <div class="hijo item5">
+                <span>5</span>
+            </div>
+
+            <div class="hijo item6">
+                <span>6</span>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+       
+        
+    </body>
+</html>
+
+

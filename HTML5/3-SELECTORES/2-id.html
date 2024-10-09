@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector id</title>
+
+        <style>
+           /* El selector de Id identifica y estiliza de forma única una etiqueta del DOM */
+           /* Se emplea también para identificar inequívocamente objetos de tipo nodo desde 
+           JavaScript*/
+           /* Su grado de especificidad es 100 */
+           *{
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+
+            }
+
+            #pepito{
+
+                background-color: orange;
+            }
+
+            #juanito{
+                background-color: red;
+            }
+            
+
+            p{
+                background-color: yellow;
+            }
+   
+  
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <p>soy una etiqueta p</p>
+        <p>soy una etiqueta p</p>
+        <p id="pepito">soy una etiqueta p</p>
+        <p>soy una etiqueta p</p>
+        <p id="juanito">soy una etiqueta p</p>
+       
+        
+    </body>
+</html>
+
+

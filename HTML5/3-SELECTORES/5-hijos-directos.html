@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector hijos directos</title>
+
+        <style>
+           /*  El selector de hijos directos y estiliza a todos los elementos que son hijos directos */
+
+           *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+
+            }
+
+           .mi-clase > p{
+
+                background-color: yellow;
+            }
+
+   
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <section>
+            <p>soy un p 1</p>
+            <article class="mi-clase">
+                <p>soy un p 2</p>
+                <div class="mi-clase">
+                    <p>soy un p 3</p>
+                    <div>soy un div</div>
+                </div>
+            </article>
+        </section>
+        <p>soy otro p 4</p>
+        <p>soy otro p 5</p>
+       
+        
+    </body>
+</html>
+
+

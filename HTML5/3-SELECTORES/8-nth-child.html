@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>nth child</title>
+
+        <style>
+     
+           *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+            }
+
+
+            ul{
+                margin-top: 50px;
+            }
+
+  
+            p:nth-child(3){
+                background-color: orange;
+            }
+   
+            li:nth-child(even){
+                background-color: blue;
+                color:white;
+            }
+
+            li:nth-child(odd){
+                background-color: aliceblue;
+            }
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <article>
+            <p>soy una p y estoy la primera</p>
+            <p>soy una p y estoy la segunda</p>
+            <p>soy una p y estoy la tercera</p>
+        </article>
+
+        <div>
+            <div>soy un div y estoy el primero</div>
+            <div>soy un div y estoy el segundo</div>
+            <p>soy una p y estoy la tercera</p>
+        </div>
+
+        <ul>
+            <li>soy un li</li>
+            <li>soy un li</li>
+            <li>soy un li</li>
+            <li>soy un li</li>
+            <li>soy un li</li>
+            <li>soy un li</li>
+            <li>soy un li</li>
+        </ul>
+
+
+       
+        
+    </body>
+</html>
+
+

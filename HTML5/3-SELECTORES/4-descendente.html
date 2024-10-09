@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector descendente</title>
+
+        <style>
+           /*En selector descendente selecciona y estiliza todos los elementos
+           que estén DENTRO de otro */
+
+           *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+        }
+        /* Especificidad 2; 1 de section y 1 de p */
+        /* div p{
+            background-color: yellow;
+        } */
+
+        .mi-contenedor .guay{
+
+                background-color: aqua;
+
+        }
+   
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+        <p>soy otra p</p>
+        <section>
+            <p>soy otra p</p>
+            <article>
+
+                 <div class="mi-contenedor">
+
+                    <p class="guay">hola 1 </p>
+                    <div class="guay">soy el div</div>
+
+                 </div>
+
+            </article>
+
+            <div>
+
+                <p>hola 2</p>
+
+             </div>
+
+        </section>
+
+
+       
+        
+    </body>
+</html>
+
+
