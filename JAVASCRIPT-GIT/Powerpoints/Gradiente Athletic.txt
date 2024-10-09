@@ -1,0 +1,2 @@
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,ff0000+26,ffffff+27,ffffff+50,ffffff+50,f6290c+51,f02f17+71,ffffff+71,ffffff+88,ffffff+88,ff0000+89,e73827+100 */
+background: linear-gradient(to right,  rgba(255,0,0,1) 0%,rgba(255,0,0,1) 26%,rgba(255,255,255,1) 27%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(255,255,255,1) 71%,rgba(255,255,255,1) 88%,rgba(255,255,255,1) 88%,rgba(255,0,0,1) 89%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
