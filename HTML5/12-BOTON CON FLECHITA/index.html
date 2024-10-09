@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Botón con flechita</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline:none;
+            box-sizing: border-box;
+            line-height:1;
+        }
+
+        li{
+            margin-bottom:20px;
+            position: relative;
+            /* display: flex;
+            align-items: center; */
+        }
+
+        li i{
+            opacity: 0;
+            position: absolute;
+            transition: all 500ms ease-out;
+            
+        }
+
+        a:hover + i{
+            opacity: 1;
+            transform: translate(10px,0px);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="">Botón mucho texto</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </li>
+
+        <li>
+            <a href="">Botón corto</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </li>
+
+        <li>
+            <a href="">Botón</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </li>
+    </ul>
+    
+</body>
+</html>
