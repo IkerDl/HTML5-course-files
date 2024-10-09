@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/reset-meyer.css">
+        <title>Sticky</title>
+
+        <!-- CUANDO UN ELEMENTO TIENE POSICIONAMIENTO sticky SE DICE
+        QUE ESTÁ POSICIONADO Y TIENE LOS SUPERPODERES: TOP, BOTTOM, LEFT Y RIGHT -->
+
+
+        <style>
+
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+           .botonera-roja{
+            position: fixed;
+            z-index: 200;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: red;
+           }
+
+           .contenedor-principal{
+
+            width: 80%;
+            height: 2000px;
+            background-color: greenyellow;
+            margin-top: 70px;
+           }
+
+           .banner-portada{
+
+            background-color: orange;
+            height: 250px;
+
+           }
+
+           /* contiene la parte derecha e izquierda de las noticias de la portada */
+           .noticias-portada{
+
+            background-color: violet;
+            /* height: 200px; */
+            display: flex;
+            justify-content: space-between;
+
+
+           }
+
+           .noticia-izquierda-portada{
+
+                background-color: blue;
+                width: 49%;
+                /* height:300px; */
+
+           }
+
+           .noticias-derecha-portada{
+
+                background-color: aqua;
+                width: 49%;
+                height:400px;
+
+           }
+
+           .noticia-principal{
+
+            background-color: pink;
+            height: 200px;
+            position: sticky;
+            top: 70px;
+           }
+ 
+
+        </style>
+
+    </head>
+    <body>
+
+        <nav class="botonera-roja"></nav>
+
+        <div class="contenedor-principal">
+
+            <section class="banner-portada">
+
+            </section>
+
+            <section class="noticias-portada">
+
+                <section class="noticia-izquierda-portada">
+
+                    <article class="noticia-principal">
+
+                    </article>
+
+                </section>
+
+                <section class="noticias-derecha-portada">
+
+                </section>
+
+            </section>
+
+            <section class="banner-promocion">
+
+            </section>
+
+
+
+
+
+        </div>
+       
+        
+    </body>
+</html>
+
+

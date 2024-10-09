@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Botonera F1 Simple</title>
+
+        <style>
+            @font-face {
+                font-family: "F1-Regular";
+                src: url(./assets/fonts/Formula1-Regular.otf);
+            }
+
+            @font-face {
+                font-family: "F1-Bold";
+                src: url(./assets/fonts/Formula1-Bold.otf);
+            }
+
+            @font-face {
+                font-family: "F1-Wide";
+                src: url(./assets/fonts/Formula1-Wide.otf);
+            }
+
+
+
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+                border: none;
+                outline: none;
+                box-sizing: border-box;
+                line-height: 1;
+            }
+
+            html,body{
+                font-size: 16px; /* 1rem */
+            }
+
+            .botonera-roja{
+                background-color: #e10600;
+                height: 70px;
+                display: flex;
+                flex-direction:row;
+                justify-content: flex-start;
+                align-items: stretch;
+
+            }
+
+            .boton{
+                color:white;
+                font-family: "F1-Regular";
+                font-size: 13px; 
+                background-color: #e10600;  
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                /* align-content:center; también funciona sin flex */
+                transition:all 200ms ease-in;
+             
+            }
+
+            .boton:hover{
+                background-color: #15151e;
+            }
+
+            .boton .flechita{
+
+                font-size: 10px;
+                margin-left: 8px;
+            }
+
+            .boton-logo img{
+
+                width: 130px;
+            }
+
+            .boton-logo{
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                /* align-content:center; también funciona sin flex */
+                
+            }
+
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <nav class="botonera-roja">
+            <a class="boton-logo" href="#">
+                <img src="./assets/img/f1_logo.png" alt="Logo oficial F1">
+            </a>
+            <a class="boton" href="#">Latest <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Video</a>
+            <a class="boton" href="#">F1 Unlocked</a>
+            <a class="boton" href="#">Schedule <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Results <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Drivers <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Teams <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Gaming <i class="flechita fa-solid fa-chevron-down"></i></a>
+            <a class="boton" href="#">Live Timing</a>
+        </nav>
+
+       
+        
+    </body>
+</html>
+
+

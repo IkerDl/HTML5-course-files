@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Static</title>
+
+        <!-- TODOS LOS ELEMENTOS DEL DOM TIENEN POR DEFECTO UNA PROPIEDAD
+        LLAMADA "position". ESTO QUIERE DECIR QUE SI PONEMOS ESTA PROPIEDAD
+        CSS EN CUALQUIER ELEMENTO CON EL VALOR "static" (QUE ES SU VALOR
+        POR DEFECTO) NO VAMOS A CONSEGUIR NADA. NINGÚN CAMBIO 
+        CUANDO EL NAVEGADOR VA RENDERIZANDO EL HTML (DE ARRIBA A ABAJO
+        Y DE IZQUIERDA A DERECHA) TANTO LOS ELEMENTOS DE LINEA COMO LOS DE
+        BLOQUE VAN OCUPANDO SUS "ESPACIOS NATURALES". ESTO ES LO QUE SE CONOCE
+        COMO "FLUJO NORMAL". 
+        CUANDO LOS ELEMENTOS DEL DOM TIENEN SU PROPIEDAD "position" CON UN 
+        VALOR "static" SE DICE QUE NO ESTÁ POSICIONADO-->
+
+
+        <style>
+
+            #mi-div{
+                background-color: red;
+                /* position:static; esto es como si pusiera nada */
+            }
+
+            #mi-span{
+                background-color: chartreuse;
+                /* position:static; esto es como si pusiera nada */
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="mi-div">esto es un elemento de bloque y se colocará en su posición natural</div>
+        <span id="mi-span">esto es un elemento de linea y se colocará en su posición natural</span>
+       
+        
+    </body>
+</html>
+
+

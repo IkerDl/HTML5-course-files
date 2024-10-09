@@ -1,0 +1,329 @@
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    *{
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    body,html{
+
+        font-family: "Roboto";
+        font-size: 16px;/* 1rem */
+        /* background-color: #151515; */
+    }
+
+
+    .cabecera{
+
+        /* height: 50px;
+        background-color: #92d050; */
+    }
+
+    .cabecera img{
+        width: 100%;
+    }
+
+    .botonera-principal{
+
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+        padding: 2px;
+    }
+
+    .botonera-principal a{
+
+        background-color: #e10600;
+        color: white;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonera-principal .logo{
+        display: none;
+    }
+
+    .botonera-principal .logo img{
+        width: 100%;
+    }
+
+    .principal{
+
+        /* background-color: #151515; */
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+
+    }
+
+    .principal article{
+
+        width: 100%;
+        padding: 10px;
+ 
+    }
+
+
+    .principal article header img{
+        width: 100%;
+        height: auto;
+    }
+
+    .principal-articulo{
+        border-right: 1px #e10600 solid;
+        border-bottom: 1px #e10600 solid;
+        border-radius: 0 0 20px 0;
+        padding-bottom: 20px;
+    }
+
+    .principal-articulo h3{
+        color: #e10600;
+        padding: 10px 0;
+    }
+  
+
+
+    .pie-pagina{
+        display: flex;
+        flex-direction: column;
+        background-color: #151515;
+        
+
+    }
+
+    .pie-pagina .direccion{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:5px;
+        padding: 20px 0;
+        /* background-color: aqua; */
+    }
+
+    .pie-pagina .social-media{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 0;
+       /*  background-color: aqua; */
+    }
+
+    .pie-pagina .social-media a:link{
+
+        color: white;
+        font-size: 32px;
+    }
+
+    .pie-pagina .direccion .imagen-footer{
+        width: 20%;
+    }
+    .pie-pagina .direccion .copyright-footer{
+        width: 60%;
+    }
+
+    .pie-pagina .direccion .imagen-footer img{
+        width: 100%;
+    }
+
+    .pie-pagina .direccion .copyright-footer span{
+        color: white;
+        font-size: 12px;
+        
+    }
+
+    
+
+    .pie-pagina .botonera-footer{
+        display: none;
+    }
+
+
+
+
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+/* MAYOR O IGUAL DE 576PX (A PARTIR DE 575PX INCLUSIVE) - SMARTPHONES */
+@media only screen and (min-width:576px){
+
+
+
+
+
+
+}
+
+
+/* MAYOR O IGUAL DE 768PX (A PARTIR DE 768PX INCLUSIVE) - SMARTPHONES GRANDES, TABLETS */
+@media only screen and (min-width:768px){
+
+    .principal{
+ 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        padding-top:3px;
+
+ 
+
+    }
+
+  /*   .principal::after {
+        content: "";
+        flex: auto;
+    } */
+
+    .botonera-principal{
+        flex-direction: row;
+        gap:0;
+        padding: 0;
+        background-color: #e10600;
+        height: 70px;
+    }
+
+
+    .botonera-principal a{
+
+ 
+        padding: 10px 20px;
+
+    }
+
+
+    .principal article{
+
+       /*  background-color: orange; */
+        width: 49%;
+    }
+
+    .pie-pagina{
+ 
+        flex-direction: row;
+        justify-content: space-around;
+ 
+        
+
+    }
+
+    .pie-pagina .social-media{
+        
+        gap:20px;   
+
+    }
+
+
+    .pie-pagina .direccion{
+        
+        justify-content: flex-start;
+        padding: 20px 0;
+
+    }
+
+
+}
+
+
+
+/* MAYOR O IGUAL DE 992PX (A PARTIR DE 992PX INCLUSIVE) - PC PEQUEÑOS, LAPTOPS */
+@media only screen and (min-width:992px){
+
+    .botonera-principal .logo{
+        display: flex;
+        margin:0 20px;
+        width: 130px;
+        align-items: center;
+    }
+
+    .principal article{
+
+        width: 24%;
+    }
+
+
+    .pie-pagina .botonera-footer{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .pie-pagina .botonera-footer a{
+        padding: 5px 0;
+        color: white;
+        font-size: 14px;
+       
+    }
+
+    .pie-pagina .botonera-footer a:link{
+
+        color: white;
+    }
+
+    .pie-pagina .botonera-footer a:visited{
+
+        color: white;
+    }
+
+    .pie-pagina .botonera-footer a:hover{
+
+        color:orange;
+    }
+
+    .pie-pagina .botonera-footer a:active{
+
+        color: white;
+    }
+
+    .botonera-principal a{
+
+        transition: all .1s ease-out;
+    }
+
+
+    .botonera-principal a:hover{
+
+        background-color:#151515;
+    }
+
+    .pie-pagina .social-media a{
+
+        transition: all 0.1s ease-out;
+   
+    }
+
+
+    .pie-pagina .social-media a:visited{
+
+        color: white;
+   
+    }
+
+    .pie-pagina .social-media a:hover{
+
+        color: orange
+ 
+    }
+
+
+  
+
+}
+
+/* MAYOR O IGUAL DE 1200PX (A PARTIR DE 1200PX INCLUSIVE) - PC GRANDES, TELEVISIONES */
+@media only screen and (min-width:1200px){
+
+
+
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Relative</title>
+
+        <!--CUANDO UN ELEMENTO TIENE SU PROPIEDAD position COMO absolute
+        SE DICE QUE ESTÁ POSICIONADO.
+        POR LO TANTO TIENE LOS SUPER PODERES TOP, BOTTOM, LEFT Y RIGHT
+        MEDIANTE ESTAS PROPIEDADES SE POSICIONA RELATIVAMENTE A SU
+        ANCESTRO POSICIONADO MÁS CERCANO. EN EL CASO DE NO TENER
+        NINGÚN ANCESTRO POSICIONADO SE POSICIONARÍA EN RELACIÓN AL BODY-->
+
+
+        <style>
+
+            .abuelo{
+
+                width: 600px;
+                height: 600px;
+                background-color: burlywood;
+                position: relative;
+                top:100px;
+                left: 100px;
+
+            }
+
+            .padre{
+
+                width: 400px;
+                height: 400px;
+                background-color: chartreuse;
+                position: absolute;
+                top:100px;
+                left:100px;
+                z-index:-100;
+
+    
+            }
+
+            .hijo{
+
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                position:relative;
+        
+            }
+
+    
+     
+
+        </style>
+
+    </head>
+    <body>
+       
+        <div class="abuelo">
+
+            <div class="padre">
+
+                <div class="hijo"></div>
+
+            </div>
+
+        </div>     
+        
+    </body>
+
+</html>
+
+

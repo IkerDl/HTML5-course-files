@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Letter</title>
+
+        <style>
+
+            @font-face {
+                font-family: "ArabesqueInitialen";
+                src: url("./assets/fonts/ArabesqueInitialen.ttf");
+            }
+
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+                border: none;
+                outline: none;
+                box-sizing: border-box;
+                line-height: 1;
+            }
+
+
+            body{
+
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 16px; /* 1rem */
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inicio-cuento::first-letter{
+
+                font-family: "ArabesqueInitialen";
+                font-size: 70px;
+                font-weight: lighter;
+            }
+
+
+        </style>
+        
+    </head>
+    <body>
+
+        <h1 class="inicio-cuento">Erase una vez...</h1>
+       
+        
+    </body>
+</html>
+
+

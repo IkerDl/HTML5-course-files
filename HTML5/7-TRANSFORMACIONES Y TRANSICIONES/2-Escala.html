@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escala</title>
+
+        <!-- TRANSICIONES -->
+        <!-- 
+        linear 
+        ease-in 
+        ease-out
+        ease-in-out
+        -->
+
+        <style>
+
+            .cuadrado{
+              
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                background-color: chartreuse;
+                transition:all 100ms linear; /* el parámetro de 1s es el retraso opcional */
+                /* transition:width 20ms linear,background-color 500ms linear; */
+                
+            }
+
+            .cuadrado:hover{
+                background-color: red;
+                /* width: 500px; Si queremos modificar el tamaño de una etiqueta este no es el mejor modo */
+                /* opacity:1; */
+                /* Los argumentos utilizados dentro del método scale son en primer lugar 
+                la coordenada X y en segundo lugar la coordenada Y. 0 es es 0% y 1 es el 100%*/
+                /* transform:scale(1.1,1.1); */
+                transform:scale(0.9,0.9);
+                /* transform: scaleX(0.5);
+                transform: scaleY(0.5); */
+                /* width: 150px; Este pivota desde el punto x 0 e y 0 del objeto y generalmente no va a ser lo que queremos */
+                /* height: 150px; */
+            }
+
+            /* .cuadrado:active{
+                background-color: orange;
+            } */
+
+            img{
+                width: 200px;
+                transition:all 3s ease-out;
+            }
+
+            img:hover{
+                transform:translate(800px,0px);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+       <div class="cuadrado"></div>
+
+       <img src="./assets/img/car.webp" alt="">
+        
+    </body>
+</html>
+
+

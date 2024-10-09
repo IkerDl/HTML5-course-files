@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Roboto";
+    font-size: 16px; /* 1rem */
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    
+}
+
+h2 a{
+
+    text-decoration: none;
+    
+
+}
+
+h2 a:link{
+    color: #333333;
+}
+
+h2 a:hover{
+
+    color:#f9a300;
+}
+
+h3{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px ;
+    color: #888888;
+}
+
+.articulo-general{
+
+    width: 310px;
+    padding:20px;
+
+}
+
+.contenedor-imagen{
+
+    position: relative;
+
+ 
+}
+
+.contenedor-imagen > img{
+
+    width: 100%;   
+    
+}
+
+/* puntito rojo */
+.en-directo img{
+
+    height: 12px;
+
+}
+
+.contenedor-minibanner{
+    width: 100px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.contenedor-minibanner img{
+    width: 100%;
+}
+
+.en-directo{
+
+    width: 110px;
+    height: 28px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    border:white solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:absolute;
+    top:10px;
+    right: 10px;
+
+}
+
+.btn-en-directo{
+    display: block;
+}
+
+.en-directo span{
+
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.autor{
+
+    color: #888888;
+    font-size: 13px;
+}
+
+.fecha{
+    color:  #aaaaaa;
+    font-size: 12px;
+}
